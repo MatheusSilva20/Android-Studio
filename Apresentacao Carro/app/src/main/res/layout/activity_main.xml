@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="411dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="1dp"
+            android:background="#76B84C"
+            android:gravity="center"
+            android:text="Fiat"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/img1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt1"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="411dp"
+            android:layout_height="65dp"
+            android:background="#1B3CB6"
+            android:gravity="center_vertical"
+            android:text="Exercicio 3"
+            android:textColor="#FFFCFC"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="411dp"
+            android:layout_height="442dp"
+            android:background="#C3C3C3"
+            android:cropToPadding="false"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt2"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/unoescadas" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="414dp"
+            android:layout_height="76dp"
+            android:layout_marginEnd="1dp"
+            android:background="#C3C3C3"
+            android:gravity="center"
+            android:text="Uno Mille"
+            android:textColor="#D82B2B"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img1"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="416dp"
+            android:layout_height="76dp"
+            android:background="#C3C3C3"
+            android:gravity="center"
+            android:text="R$15,500"
+            android:textColor="#D82B2B"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
